@@ -34,6 +34,7 @@ const teams = [
     }
 ]
 
+console.log(teams);
 
 
 let namesArray = [];
@@ -43,12 +44,12 @@ for (i = 0; i < teams.length; i++){
     
 };
 
-//let newPoints = teams.puntiFatti;
+
 for (i = 0; i < teams.length; i++){
     let randomPoints = Math.floor(Math.random() * 20);
     
     teams.points = randomPoints;
-    //console.log(teams);
+    
     
 };
 
@@ -58,7 +59,7 @@ for (i = 0; i < teams.length; i++){
     let randomFouls = Math.floor(Math.random() * 20);
     teams.fouls = randomFouls;
     foulsArray.push(randomFouls)
-    //console.log(teams);
+    
 };
 
 
