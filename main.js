@@ -28,14 +28,5 @@ const bike = [
 ]
 
  // Funzione per trovare la bici con il peso minore
- const biciLeggera = bike.reduce((min, bike) => bike.weight < min.weight ? bike : min);
-
  
- printBike.innerHTML = `${biciLeggera.weight} kg</strong>.`;
-
-console.log(bike);
-
-
-       
-        
- 
+ printBike.innerHTML = bike[0].weight

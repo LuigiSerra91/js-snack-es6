@@ -10,3 +10,39 @@ Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
 */
+
+const teams = [
+    {
+        nameTeam: 'Atalanta',
+        points : 0,
+        fouls : 0,
+        
+    },
+    {
+        nameTeam : 'Roma',
+        points : 0,
+        fouls : 0,
+        
+        
+    },
+    {
+        nameTeam : 'Cagliari',
+        points : 0,
+        fouls : 0,
+        
+        
+    }
+]
+
+
+const fouls= Math.random() * 10
+for (let i = 0; i < teams.length; i++) {
+    const falli_random = teams[0] ;
+    console.log(falli_random);
+}
+
+console.log(teams);
+
+
+
+
