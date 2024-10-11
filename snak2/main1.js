@@ -14,34 +14,38 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 const teams = [
     {
         nameTeam: 'Atalanta',
-        points : 0,
-        fouls : 0,
+        points : randomNumber(1, 100),
+        fouls : randomNumber(1, 100),
         
     },
     {
         nameTeam : 'Roma',
-        points : 0,
-        fouls : 0,
+        points : randomNumber(1, 100),
+        fouls : randomNumber(1, 100),
         
         
     },
     {
         nameTeam : 'Cagliari',
-        points : 0,
-        fouls : 0,
+        points : randomNumber(1, 100),
+        fouls : randomNumber(1, 100),
         
         
     }
 ]
 
-
-const fouls= Math.random() * 10
-for (let i = 0; i < teams.length; i++) {
-    const falli_random = teams[0] ;
-    console.log(falli_random);
+function randomNumber(min ,max ) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
-console.log(teams);
+
+let teamsFouls = []
+for (let i = 0; i < teams.length; i++) {;
+    teamsFouls.push(teams[i].nameTeam, teams[i].fouls)
+}
+console.log(teamsFouls);
+
+
 
 
 
